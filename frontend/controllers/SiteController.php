@@ -116,6 +116,21 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    public function actionDogs()
+    {
+        return $this->render('dogs');
+    }
+
+    public function actionProgress()
+    {
+        return $this->render('progress');
+    }
+
+    public function actionForum()
+    {
+        return $this->render('forum');
+    }
+
     public function actionSignup()
     {
         $model = new SignupForm();
