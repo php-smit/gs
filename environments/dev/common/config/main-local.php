@@ -16,5 +16,17 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'i18n' => [
+            'translations' => [
+                'site' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@common/messages'
+                ],
+                'auth' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@common/messages',
+                ],
+            ],
+        ]
     ],
 ];

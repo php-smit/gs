@@ -26,19 +26,19 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'Питомник "Great Star"',
+                'brandLabel' => Yii::t('site', 'Питомник "Great Star"'),
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
             $menuItems = [
-                ['label' => 'Питомник', 'url' => ['/site/index']],
-                ['label' => 'Наши собаки', 'url' => ['/site/dogs']],
-                ['label' => 'Щенки', 'url' => ['/site/puppies']],
-                ['label' => 'Достижения', 'url' => ['/site/progress']],
-                ['label' => 'Форум', 'url' => ['/site/forum']],
-                ['label' => 'Контакты', 'url' => ['/site/contact']],
+                ['label' => Yii::t('site', 'Питомник'), 'url' => ['/site/index']],
+                ['label' => Yii::t('site', 'Наши собаки'), 'url' => ['/site/dogs']],
+                ['label' => Yii::t('site', 'Щенки'), 'url' => ['/site/puppies']],
+                ['label' => Yii::t('site', 'Достижения'), 'url' => ['/site/progress']],
+                ['label' => Yii::t('site', 'Форум'), 'url' => ['/site/forum']],
+                ['label' => Yii::t('site', 'Контакты'), 'url' => ['/site/contact']],
             ];
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
@@ -58,8 +58,8 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy;
+            <?= Yii::t('site', 'Питомник "Great Star"') . ' ' . date('Y') ?></p>
         </div>
     </footer>
 
